@@ -496,6 +496,11 @@ header .navbar ul li a:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
   background-color: rgba(0, 0, 0, 0.9) !important;
 }
+.skills .container .bar .info img {
+  width: 60px;   /* 🔥 set a fixed width */
+  height: 60px;  /* 🔥 set a fixed height */
+  object-fit: contain; /* keeps aspect ratio */
+}
 .skills .container .bar .info {
   display: flex;
   flex-direction: column;
