@@ -74,7 +74,7 @@ header {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 2rem 9%;
 }
 .heading {
@@ -444,10 +444,10 @@ header .navbar ul li a:hover {
     width: 80%;
     mix-blend-mode: normal;
   }
-  .about .row {
-    padding: 0.5rem;
-    margin-bottom: 7rem;
-  }
+.about .row {
+  margin-bottom: 2rem;  /* reduce gap */
+  padding-bottom: 2rem; /* if needed */
+}
   .about .row .content {
     padding: 1rem;
   }
@@ -496,11 +496,7 @@ header .navbar ul li a:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
   background-color: rgba(0, 0, 0, 0.9) !important;
 }
-.skills .container .bar .info img {
-  width: 60px;   /* 🔥 set a fixed width */
-  height: 60px;  /* 🔥 set a fixed height */
-  object-fit: contain; /* keeps aspect ratio */
-}
+
 .skills .container .bar .info {
   display: flex;
   flex-direction: column;
