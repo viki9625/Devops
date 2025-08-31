@@ -26,7 +26,7 @@ body {
   color: #fff;
 }
 
-html {
+html {  
   font-size: 62.5%;
   overflow-x: hidden;
 }
@@ -365,7 +365,6 @@ header .navbar ul li a:hover {
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-  mix-blend-mode: luminosity;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -462,9 +461,11 @@ header .navbar ul li a:hover {
 .skills {
   min-height: 90vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
+  padding: 3rem 1rem;
 }
 .skills h2 {
   color: #fff;
+  text-align: center;
 }
 .skills .heading span {
   color: rgb(255, 230, 0);
@@ -474,64 +475,55 @@ header .navbar ul li a:hover {
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
-  width: 90%;
-  margin: auto;
-  margin-top: 2rem;
+  max-width: 1200px;   /* keeps it centered */
+  margin: 2rem auto;   /* centers container */
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  flex-wrap: wrap;
-  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem; /* smaller gap */
 }
 .skills .container .bar {
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0.8rem;
   background: rgba(0, 0, 22, 0.9);
   transition: 0.2s;
+  text-align: center;
 }
 .skills .container .bar:hover {
-  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.95);
 }
-
 .skills .container .bar .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 0.5rem;
 }
 .skills .container .bar .info i {
-  font-size: 4rem;
+  font-size: 2rem; /* smaller icon */
 }
 .skills .container .bar .info span {
-  font-size: 2rem;
+  font-size: 1rem; /* smaller text */
   font-weight: 500;
-  font-family: "Poppins";
-  margin-left: 0.5rem;
 }
-/* skills media queries starts*/
+
+/* responsive tweaks */
+@media screen and (max-width: 900px) {
+  .skills .container .row {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
 @media screen and (max-width: 600px) {
   .skills .container {
-    padding: 0;
-    margin: 0;
+    padding: 1rem;
+    width: 95%;
   }
   .skills .container .row {
     grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
-    padding: 2rem 0.2rem 2rem 0.2rem;
-    gap: 1rem;
-  }
-  .skills .container {
-    margin-top: 5px;
-    width: 100%;
   }
 }
-/* skills media queries ends*/
-/* skills section ends */
+
 
 /* education section starts */
 .education {
@@ -565,10 +557,10 @@ header .navbar ul li a:hover {
   transition: 0.3s;
   background: rgb(252, 252, 252);
 }
-.education .box-container .box:hover {
+/* .education .box-container .box:hover {
   transform: scale(1.03);
   box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
-}
+} */
 .education .box-container .box .image {
   flex: 1 1 20rem;
   width: 100%;

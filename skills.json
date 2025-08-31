@@ -1,7 +1,7 @@
 [   
     {
         "name": "AWS",
-        "icon": "https://img.icons8.com/?size=100&id=VoXRGxL3ekkk&format=png&color=FFFFFF"
+        "icon": "skills/aws.png"
     },
     {
         "name": "GCP",
@@ -23,6 +23,7 @@
         "name": "Docker",
         "icon": "https://img.icons8.com/color/48/000000/docker.png"
     },
+    
     {
         "name": "Jenkins",
         "icon": "https://img.icons8.com/color/48/000000/jenkins.png"
@@ -38,10 +39,6 @@
     {
         "name": "Grafana",
         "icon": "https://img.icons8.com/color/48/000000/grafana.png"
-    },
-    {
-        "name": "Prometheus",
-        "icon": "https://commons.wikimedia.org/wiki/Special:FilePath/Prometheus_software_logo.svg"
     },
     {
         "name": "Nginx",
