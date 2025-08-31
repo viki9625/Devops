@@ -41,6 +41,10 @@
         "icon": "https://img.icons8.com/color/48/000000/grafana.png"
     },
     {
+        "name": "Prometheus",
+        "icon": "https://logo.svgcdn.com/l/prometheus.png"
+    },
+    {
         "name": "Nginx",
         "icon": "https://img.icons8.com/color/48/000000/nginx.png"
     },
